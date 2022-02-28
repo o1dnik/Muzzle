@@ -7,12 +7,11 @@
     },
     "Sniff": {
       "commandName": "Project",
-      "commandLineArgs": "sniff -d http://yandex.ru"
+      "commandLineArgs": "sniff -d yandex.ru"
     },
     "AttackDns": {
       "commandName": "Project",
-      "executablePath": "attackdns -u http://lenta.ru",
-      "commandLineArgs": "attackdns -u http://lenta.ru"
+      "commandLineArgs": "dns-flood -d lenta.ru"
     },
     "FloodHttp": {
       "commandName": "Project",

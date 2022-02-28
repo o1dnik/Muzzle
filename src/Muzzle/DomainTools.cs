@@ -12,20 +12,11 @@ namespace Muzzle
 {
     internal class DomainTools
     {
-        private static Regex domainRu = new Regex(@"^([a-zA-Z0-9\-]{1,63}\.)+ru$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        private static Regex domainBy = new Regex(@"^([a-zA-Z0-9\-]{1,63}\.)+by$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-
         public static bool IsValidTarget(string target)
         {
             if (string.IsNullOrEmpty(target))
             {
                 Console.WriteLine($"Missing target");
-                return false;
-            }
-            if (!domainRu.IsMatch(target) && 
-                !domainBy.IsMatch(target))
-            {
-                Console.WriteLine($"Target must be a valid *.ru or *.by domain such as huylo.ru or targan.by");
                 return false;
             }
 
