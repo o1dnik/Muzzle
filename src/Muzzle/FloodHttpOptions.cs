@@ -13,7 +13,7 @@ namespace Muzzle
         [Option('d', "domain", Required = true)]
         public string Domain { get; set; }
 
-        [Option('t', "threads", Required = false, Default = 40)]
+        [Option('t', "threads", Required = false, Default = 100)]
         public int ThreadsPerServer { get; set; }
     }
 }

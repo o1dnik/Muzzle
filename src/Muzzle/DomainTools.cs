@@ -12,11 +12,18 @@ namespace Muzzle
 {
     internal class DomainTools
     {
+        private static Regex domainRegex = new Regex(@"^([a-zA-Z0-9\-]{1,63}\.)+[A-Za-z]{2,6}$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
         public static bool IsValidTarget(string target)
         {
             if (string.IsNullOrEmpty(target))
             {
                 Console.WriteLine($"Missing target");
+                return false;
+            }
+            if (!domainRegex.IsMatch(target))
+            {
+                Console.WriteLine($"Target must be a valid domain such as huylo.ru or targan.by");
                 return false;
             }
 
