@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "environmentVariables": {},
+      "distributionName": ""
+    },
+    "Sniff": {
+      "commandName": "Project",
+      "commandLineArgs": "sniff -d http://yandex.ru"
+    },
+    "AttackDns": {
+      "commandName": "Project",
+      "executablePath": "attackdns -u http://lenta.ru",
+      "commandLineArgs": "attackdns -u http://lenta.ru"
+    },
+    "FloodHttp": {
+      "commandName": "Project",
+      "commandLineArgs": "http-flood -d lenta.ru"
+    }
+  }
+}
