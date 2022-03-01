@@ -7,11 +7,11 @@
     },
     "Sniff": {
       "commandName": "Project",
-      "commandLineArgs": "sniff -d yandex.ru"
+      "commandLineArgs": "sniff -d cbr.ru"
     },
     "AttackDns": {
       "commandName": "Project",
-      "commandLineArgs": "dns-flood -d lenta.ru"
+      "commandLineArgs": "dns-flood -d fsb.ru -t 1"
     },
     "FloodHttp": {
       "commandName": "Project",

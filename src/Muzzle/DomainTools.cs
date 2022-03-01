@@ -41,7 +41,7 @@ namespace Muzzle
             var fullNameServers = nameServers.Select(x =>
                 x.EndsWith(".")
                 ? x.Substring(0, x.Length - 1)
-                : x + "." + domain);
+                : x);
 
 
             var dnsServers = new List<IPAddress>();
