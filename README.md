@@ -28,6 +28,7 @@ muzzle sniff -d lenta.ru
 > Виявити та роздрукувати DNS та Web сервери пов'язані з доменом lenta.ru.
 
 muzzle dns-flood -d lenta.ru
+
 muzzle dns-flood -d lenta.ru -t 25
 > Тиск на всі DNS сервери що належать lenta.ru по UDP порту 53. 
 > Кількість одночасних з'єднань до кожного сервера (потоків) - параметр -t, за змовчуванням - 40.
